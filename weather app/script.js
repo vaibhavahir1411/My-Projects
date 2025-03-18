@@ -45,4 +45,12 @@ searchBtn.addEventListener("click", () => {
   checkWheather(searchBox.value);
 });
 
+
+//for search when hit enter key
+searchBox.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    checkWheather(searchBox.value);
+  }
+});
+
 checkWheather(); //for show when page refresh for default city

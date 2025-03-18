@@ -87,3 +87,11 @@ btn.addEventListener("click", (evt) => {
 window.addEventListener("load", () => {
   updateExchangeRate();
 });
+
+//for convert currency when hit enter key
+window.addEventListener("keydown", (event) => {
+  let key = event.key;
+  if (key === "Enter") {
+    updateExchangeRate();
+  }
+});
